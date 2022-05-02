@@ -1,0 +1,80 @@
+:root {
+    --header-title: #FFFFFF;
+    --header-select: #29B1DD;
+    --main-bg: #DDDDDD;
+    --cards-bg: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    font-family: 'Acme', sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color: var(--header-title);
+    color: var(--header-select);
+    font-size: 2.4rem;
+    padding-left: 1rem;
+    padding-top: .3rem;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: var(--header-select);
+    line-height: 50px;
+    text-align: center;
+}
+
+nav label {
+    color: white;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: var(--main-bg);
+}
+
+#icon-container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon-card {
+    width: 180px;
+    height: 85px;
+    background-color: var(--cards-bg);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.icon-card:hover {
+    transition: .4s;
+    transform: scale(105%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+
+}
+
+.icon-card i {
+    font-size: 2rem;
+    margin-bottom: .3rem;
+}
+
+.icon-card>span {
+    font-size: .7rem;
+}

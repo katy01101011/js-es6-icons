@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Title -->
@@ -13,14 +17,29 @@
     <link rel="icon" type="image/x-icon" href="img/kisspng-gratis-download-colorful-irregular-5aa7a70f5840d6.2950198315209367193615.jpg">
 </head>
 <body>
-    <div id="icon-container">
-        <!-- <div>
-            <i class="fas fa-smile"></i>
-            <span>
-                Smile
-            </span>
-        </div> -->
-    </div>
+    <header>
+        <div class="logo">FontIcons</div>
+        <nav>
+            <label for="icons">Filtra per tipo</label>
+
+            <select name="icons" id="icons">
+            <option value="animal">All</option>
+            <option value="animal">Animal</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="user">Users</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <div id="icon-container">
+            <!-- <div>
+                <i class="fas fa-smile"></i>
+                <span>
+                    Smile
+                </span>
+            </div> -->
+        </div>
+    </main>
     <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>

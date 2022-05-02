@@ -113,14 +113,6 @@ const iconsArray = [
 	}
 ];
 
-// Milestone 1
-// Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona,
-// in cui è presente il nome dell'icona e l'icona stessa.
-
-// Milestone 2
-// Ciascuna icona ha una proprietà "color": utilizzare questa proprietà per visualizzare
-// le icone del colore corrispondente.
-
 // BONUS
 // Aggiungere alla pagina una select in cui le options corrispondono ai
 // vari tipi di icone (animal, vegetable, user). Quando l'utente seleziona un tipo dalla select,
@@ -146,11 +138,13 @@ let iconCards = iconsArray.forEach(element => {
     iconContainer.append(iconCard);
     // Creo l'elemento 'i'
     iconIcon = document.createElement('i');
-    iconIcon.classList.add(`${element.family}`, `${element.prefix}${element.name}`);
+    iconIcon.classList.add(`${element.family}`, `${element.prefix}${element.name}`, `${element.color}`);
+    // Milestone2: Aggiungo il colore alle icone
+    iconIcon.style.color = `${element.color}`;
     iconCard.append(iconIcon);
     // Creo l'elemento 'span'
     iconSpan = document.createElement('span');
-    iconSpan.innerHTML = `${element.name}`;
+    iconSpan.innerHTML = `${element.name.toUpperCase()}`;
     iconCard.append(iconSpan);
 });
 
