@@ -78,3 +78,11 @@ main {
 .icon-card>span {
     font-size: .7rem;
 }
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}

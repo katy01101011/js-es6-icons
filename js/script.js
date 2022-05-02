@@ -131,6 +131,26 @@ const iconsArray = [
 
 const iconContainer = document.getElementById('icon-container');
 
+// Creo gli array con i 'filtri' del select
+const animalsArray = [];
+const vegetablesArray = [];
+const usersArray = [];
+
+// Gestisco la parte del select
+const select = document.querySelector('select');
+console.log(select.length);
+
+
+// NON FUNZIONA!!!!!!! :(
+for(let i = 0; i < select.length; i++) {
+    document.querySelector('select>option').addEventListener('click', function() {
+        if (select.value === 'animal') {
+            console.log('ciao');
+        }
+    })
+}
+
+// Creo gli elementi in HTML
 let iconCards = iconsArray.forEach(element => {
     // Creo il 'div'
     iconCard = document.createElement('div');
@@ -146,6 +166,22 @@ let iconCards = iconsArray.forEach(element => {
     iconSpan = document.createElement('span');
     iconSpan.innerHTML = `${element.name.toUpperCase()}`;
     iconCard.append(iconSpan);
+
+    if (iconIcon.style.color == 'orange') {
+        iconIcon.style.color = 'blue';
+    } else if (iconIcon.style.color == 'green') {
+        iconIcon.style.color = 'orange';
+    } else {
+        iconIcon.style.color = 'purple';
+    }
 });
 
-console.log(iconContainer);
+iconsArray.map( (element) => {
+    if (element.type === 'animal') {
+        animalsArray.push(element);
+    } else if (element.type == 'vegetable') {
+        vegetablesArray.push(element);
+    } else {
+        usersArray.push(element);
+    }
+});
