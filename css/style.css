@@ -66,8 +66,7 @@ main {
 .icon-card:hover {
     transition: .4s;
     transform: scale(105%);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .3);
 }
 
 .icon-card i {
@@ -75,8 +74,24 @@ main {
     margin-bottom: .3rem;
 }
 
+.icon-card:hover i {
+    font-size: 3.5rem;
+    transform: rotate(360deg);
+    position: relative;
+    bottom: .7rem;
+    transition: 1s;
+}
+
 .icon-card>span {
     font-size: .7rem;
+}
+
+.icon-card:hover span {
+    font-size: 1rem;
+    transform: rotate(-360deg);
+    position: relative;
+    top: .1rem;
+    transition: 1s ease-in;
 }
 
 .hidden {

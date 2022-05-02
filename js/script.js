@@ -143,9 +143,11 @@ console.log(select.length);
 
 // NON FUNZIONA!!!!!!! :(
 for(let i = 0; i < select.length; i++) {
-    document.querySelector('select>option').addEventListener('click', function() {
+    document.querySelector('select').addEventListener('click', function() {
         if (select.value === 'animal') {
-            console.log('ciao');
+            animalsArray.forEach( (element) => {
+				element.classList.add('hidden');
+			} )
         }
     })
 }
