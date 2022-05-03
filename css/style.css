@@ -66,7 +66,8 @@ main {
 .icon-card:hover {
     transition: .4s;
     transform: scale(105%);
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, .3);
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, .3);
+    background-color: var(--header-title);
 }
 
 .icon-card i {
@@ -75,10 +76,10 @@ main {
 }
 
 .icon-card:hover i {
-    font-size: 3.5rem;
+    font-size: 4rem;
     transform: rotate(360deg);
     position: relative;
-    bottom: .7rem;
+    bottom: 1.2rem;
     transition: 1s;
 }
 
@@ -88,9 +89,10 @@ main {
 
 .icon-card:hover span {
     font-size: 1rem;
+    font-weight: bold;
     transform: rotate(-360deg);
     position: relative;
-    top: .1rem;
+    bottom: .8rem;
     transition: 1s ease-in;
 }
 
